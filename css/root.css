@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+:root {
+    --font-base: YakuHanJP, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3,
+        'メイリオ', Meiryo, sans-serif;
+    --font-h1: 'Gloria Hallelujah', cursive;
+    --main-text: #323232;
+    --main-bg: #f2f2f2;
+    --black: #323232;
+    --dark-grey: #888989;
+    --grey: #f2f2f2;
+    --light-grey: #edf0f2;
+    --sub-grey: #eee;
+    --white: #fff;
+    --green: #375b4b;
+    --light-green: #f5fbf8;
+    --pale-green: #c2d0cb;
+    --deep-green: #375b4b;
+    --dark-green: #003748;
+    --sub-green: #4d9;
+}
