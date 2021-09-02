@@ -1,5 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
+.flex,
+.flex--pc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
 .column {
     list-style: none;
     margin: 0;
@@ -71,27 +88,35 @@
 
 /* sp */
 @media screen and (max-width: 479px) {
+    .flex--pc {
+        display: block;
+    }
     .column {
         display: block;
     }
-    /* 2colum */
     .column__item:not(:first-child) {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 }
 /* tb */
 @media screen and (min-width: 480px) and (max-width: 799px) {
+    .flex--pc {
+        display: block;
+    }
     /* .column__item {
-    flex-grow: 1;
-    flex-basis: calc(50% - 12px);
-    max-width: calc(50% - 12px);
-  }
-  .column__item:nth-child(2n) {
-    margin-left: 24px;
-  }
-  .column__item:nth-child(n+3) {
-    margin-top: 30px;
-  } */
+        flex-grow: 1;
+        flex-basis: calc(50% - 12px);
+        max-width: calc(50% - 12px);
+    }
+    .column__item:nth-child(2n) {
+        margin-left: 24px;
+    }
+    .column__item:nth-child(n + 3) {
+        margin-top: 30px;
+    } */
+    .column__item:not(:first-child) {
+        margin-top: 90px;
+    }
 }
 /* pc */
 @media screen and (min-width: 800px) {

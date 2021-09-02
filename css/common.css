@@ -142,15 +142,14 @@ h3 {
     border-bottom: solid 1px var(--main-bg);
 }
 .content table th,
-table td {
-    text-align: left;
-    padding: 0.8rem;
-}
-.content table th {
-    width: 130px;
+.content table td {
+    width: 100%;
+    display: block;
+    padding: 0.8rem 0;
 }
 .content table td {
-    width: 525px;
+    text-align: left;
+    padding: 0 0 1rem;
 }
 
 /*-----------------------------------------
@@ -211,15 +210,6 @@ footer #copyright {
 -----------------------------------------*/
 /* sp */
 @media screen and (max-width: 479px) {
-    .content table th,
-    .content table td {
-        width: 100%;
-        display: block;
-        padding: 0.8rem 0;
-    }
-    .content table td {
-        padding: 0 0 1rem;
-    }
 }
 /* tb */
 @media screen and (max-width: 799px) {
@@ -233,5 +223,19 @@ footer #copyright {
     h1.ttl {
         font-size: 2rem;
         text-align: center;
+    }
+    table td {
+        padding: 0.8rem;
+    }
+    .content table th,
+    .content table td {
+        display: table-cell;
+        padding: 20px;
+    }
+    .content table th {
+        width: 170px;
+    }
+    .content table td {
+        width: 525px;
     }
 }
